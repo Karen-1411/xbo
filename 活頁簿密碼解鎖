@@ -1,0 +1,13 @@
+Sub unprotecta()
+
+    Dim i,a As Integer
+    
+    a= '輸入password
+    
+    For i = 1 To Sheets.Count
+    
+        Worksheets(i).unprotect Password:=a
+    
+    Next
+
+End Sub
