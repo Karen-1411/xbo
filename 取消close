@@ -1,0 +1,13 @@
+Private Sub Document_Close()
+  Dim response
+  response = MsgBox("Yes or no", vbYesNo)
+  
+  If response = vbNo Then
+    MsgBox "Sorry...I am not going to close the document."
+  Else
+  End If
+  
+  Stop
+  SendKeys "^({BREAK})"
+  
+End Sub
