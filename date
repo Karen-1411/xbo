@@ -1,0 +1,5 @@
+'當月最後一天
+lastday = DateSerial(Year(report), Month(report) + 1, 0) '取得報表當月最後一天
+
+'日期差異
+difference = DateDiff("d", report, lastday) '取得報表當月有幾天
